@@ -1,0 +1,19 @@
+{
+  "name": "authentication",
+  "version": "1.0.0",
+  "description": "Authentication build by node js and mongodb ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "js",
+    "authentication"
+  ],
+  "author": "Gyanendra Shah",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
