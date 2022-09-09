@@ -1,10 +1,12 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const expressLayout = require('express-ejs-layouts');
 
+
+const app = express();
 
 const db = require('./config/keys').MongoURI;
 
-const app = express();
 
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }).
     then(() => {
@@ -14,9 +16,20 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true }).
     })
 
 
+
+app.use(expressLayout);
+app.use('/assets',express.static('./assets'));
+app.set('view engine','ejs');
+
+
+
+app.use(express.urlencoded({extended:false}));
+
+
 app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/auth'));
 
-app.listen(3000, () => {
-    console.log(`Server is connected to the port ${3000}`);
+
+app.listen(3001, () => {
+    console.log(`Server is connected to the port ${3001}`);
 });
