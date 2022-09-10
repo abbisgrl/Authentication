@@ -17,7 +17,7 @@ exports.registerHandle = (req, res) => {
 
     //------------ Checking required fields ------------//
     if (!name || !email || !password || !password2) {
-        req.flash('error','Please enter all fields');
+        req.flash('error', 'Please enter all fields');
     }
 
     //------------ Checking password mismatch ------------//
@@ -383,17 +383,17 @@ exports.loginHandle = (req, res, next) => {
         successRedirect: '/dashboard',
         failureRedirect: '/auth/login',
         failureFlash: ('error', 'Please Enter Valid Email ID And Password'),
-        successFlash:('success', 'You Are Logged In')
-    })(req, res, next) 
-    
+        successFlash: ('success', 'You Are Logged In')
+    })(req, res, next)
+
 }
 
 //------------ Logout Handle ------------//
 exports.logoutHandle = (req, res) => {
-    req.logout(()=>{
+    req.logout(() => {
         res.redirect('/auth/login');
         req.flash('success', 'You are logged out');
     });
-   
-    
+
+
 }
