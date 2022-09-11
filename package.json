@@ -14,12 +14,20 @@
   "author": "Gyanendra Shah",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "express-ejs-layouts": "^2.5.1",
     "express-layout": "^0.1.0",
+    "express-session": "^1.17.3",
+    "googleapis": "^107.0.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.5.5",
+    "nodemailer": "^6.7.8",
+    "noty": "^3.2.0-beta-deprecated",
     "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
     "session": "^0.1.0"
   }
 }
