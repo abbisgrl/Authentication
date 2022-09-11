@@ -1,5 +1,5 @@
 const mongoose =require('mongoose');
-
+//user model for the database
 const userSchema = new mongoose.Schema({
     name:{
         type:String,

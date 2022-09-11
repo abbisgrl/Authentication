@@ -1,3 +1,4 @@
+//functions for authentication of the user with data
 module.exports = {
     Authentication:function (req,res,next){
         if(req.isAuthenticated()){

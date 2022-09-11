@@ -56,7 +56,7 @@ app.use(customFlash.setFlash);
 app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/auth'));
 
-
+//port listener
 app.listen(3001, () => {
     console.log(`Server is connected to the port ${3001}`);
 });
