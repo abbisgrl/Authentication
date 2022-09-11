@@ -47,21 +47,21 @@
   box-sizing: border-box;
 }
 
-img{
+img {
   border-radius: 50px;
 }
-.centerLable{ 
-    text-align: center;
+.centerLable {
+  text-align: center;
 }
-.ghostwhite{
-    color:white;
+.ghostwhite {
+  color: white;
 }
-.whiteTransparent{
+.whiteTransparent {
   background-color: rgba(255, 255, 255, 0.25) !important;
   color: white !important;
 }
 
-.red{
+.red {
   color: red;
 }
 html {
@@ -5647,9 +5647,9 @@ input[type="button"].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 
-  box-shadow: 3px 3px 39px 10px rgba(229,152,152,0.94);
-  -webkit-box-shadow: 3px 3px 39px 10px rgba(229,152,152,0.94);
-  -moz-box-shadow: 3px 3px 39px 10px rgba(229,152,152,0.94);
+  box-shadow: 3px 3px 39px 10px rgba(229, 152, 152, 0.94);
+  -webkit-box-shadow: 3px 3px 39px 10px rgba(229, 152, 152, 0.94);
+  -moz-box-shadow: 3px 3px 39px 10px rgba(229, 152, 152, 0.94);
 }
 
 .card > hr {
