@@ -7,6 +7,7 @@ const session = require('express-session');
 const customFlash = require('./config/flash');
 
 const app = express();
+const PORT = process.env.PORT || 8000;
 
 //passport configuration 
 require('./config/passport')(passport);
@@ -57,6 +58,6 @@ app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/auth'));
 
 //port listener
-app.listen(3001, () => {
+app.listen(3, () => {
     console.log(`Server is connected to the port ${3001}`);
 });
