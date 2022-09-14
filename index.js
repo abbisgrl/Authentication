@@ -58,6 +58,6 @@ app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/auth'));
 
 //port listener
-app.listen(3, () => {
-    console.log(`Server is connected to the port ${3001}`);
+app.listen(PORT, () => {
+    console.log(`Server is connected to the port ${PORT}`);
 });
